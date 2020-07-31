@@ -22,12 +22,9 @@ h1 {
 a:hover {
     text-decoration: none;
 }
+
 .navbar {
     background-color: #157fbc;
-}
-
-.navbar img {
-    width: 40%;
 }
 
 .nav_button {
@@ -41,6 +38,7 @@ a:hover {
 
 .nav_items_hover:hover {
     text-transform: uppercase;
+
 }
 
 #navbarResponsive a:link {
