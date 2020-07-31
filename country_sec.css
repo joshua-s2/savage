@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700&display=swap');
+
 /*==========Basic Styles==============*/
 
 * {
@@ -6,58 +8,31 @@
     box-sizing: border-box;
 }
 
+:root {
+    --primary-font: 'Mulish', sans-serif;
+    --primary-color: #cccccc;
+    --secondary-color: #157FBC;
+    --font-color: #000000;
+    --color3: #00ffc5;
+    --color4: #ffffff;
+}
+
 html {
-    background-color: #cccccc;
+    background-color: var(--primary-color);
+    scroll-behavior: infinite;
 }
 
 main {
-    font-family: 'Mulish', sans-serif;
-    background-color: #cccccc;
+    font-family: var(--primary-font);
+    background-color: var(--primary-color);
     font-size: 16px;
 }
 
-h1 {
-    color: #157fbc;
-}
-a:hover {
-    text-decoration: none;
+body {
+    color: var(--font-color);
 }
 
-.navbar {
-    background-color: #157fbc;
-}
 
-.nav_button {
-    border: 1px solid #00ffc5;
-}
-
-.nav_button:hover {
-    color: #157fbc;
-    background-color: #00ffc5;
-}
-
-.nav_items_hover:hover {
-    text-transform: uppercase;
-
-}
-
-#navbarResponsive a:link {
-    color: #fff;
-}
-
-#navbarResponsive a:visited {
-    color: #fff;
-}
-
-#navbarResponsive a:hover {
-    color: #00ffc5 !important;
-    font-weight: bold;
-}
-
-#navbarResponsive a:active {
-    color: #00ffc5 !important;
-    text-decoration: underline;
-}
 /*========== Previous / Next Styles==============*/
 
 i {
@@ -80,39 +55,45 @@ i {
 }
 
 .card-footer i {
-    color: #157fbc;
-}
-.card-footer {
-padding: .75rem 1.25rem !important;}
-.list-group-item {
-    padding: .55rem .25rem !important;
+    color: var(--primary-color);
 }
 
-.card-footer i:hover {
-    color: rgba(255, 99, 71, 0.712);
-    transition: all ease-in;
-    transform: translateY(-4px);
-    transition-duration: .1s;
+a:hover {
+    text-decoration: none;
 }
 
-.card-footer i:active {
-    color: purple;
+h1 {
+    color: var(--secondary-color);
 }
+
 @media all and (min-width: 0px) {
     .section-header {
         font-size: 1.5rem;
         text-align: center;
         color: var(--secondary-color);
         padding: 1.5rem;
+        margin-top: 3rem;
     }
     h4 {
         font-size: 1rem;
         text-align: right;
     }
-    .size {
-        width: 100%;
-    }
-    i {
+    i,
+    i:hover {
         font-size: 1rem;
+        color: var(--secondary-color);
+    }
+}
+
+@media all and (min-width: 768px) {
+    .section-header {
+        font-size: 3rem;
+        text-align: center;
+        color: var(--secondary-color);
+        padding: 3rem 0;
+    }
+    h4 {
+        font-size: 1.5rem;
+        text-align: right;
     }
 }
